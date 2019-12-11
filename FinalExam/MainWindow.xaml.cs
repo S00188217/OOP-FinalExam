@@ -42,7 +42,7 @@ namespace FinalExam
             Player l = new Player("Jack", "Murphy", Player.Position.Forward, new DateTime(1980, 01, 02));
             Player m = new Player("James", "Nolan", Player.Position.Defender, new DateTime(1981, 01, 02));
             Player n = new Player("Lucy", "O'Brien", Player.Position.Midfielder, new DateTime(1977, 01, 02));
-            Player o = new Player("Luke", "O'Connor", Player.Position.Defender, new DateTime(1977, 01, 02));
+            Player o = new Player("Luke", "O'Connor", Player.Position.Midfielder, new DateTime(1977, 01, 02));
             Player p = new Player("Mia", "O'Neill", Player.Position.Forward, new DateTime(1978, 01, 02));
             Player q = new Player("Michael", "O'Reilly", Player.Position.Forward, new DateTime(1979, 01, 02));
             Player r = new Player("Noah", "O'Sullivan", Player.Position.Forward, new DateTime(1977, 01, 02));
@@ -99,6 +99,22 @@ namespace FinalExam
                 AllPlayers.Remove(ChosenPosition);
             }
 
+        }
+
+        private void Listbox1_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Player ChosenPosition = listbox2.SelectedItem as Player;
+
+            if (ChosenPosition != null)
+            {
+                SelectedPlayers.Remove(ChosenPosition);
+                AllPlayers.Add(ChosenPosition);
+            }
         }
     }
 }

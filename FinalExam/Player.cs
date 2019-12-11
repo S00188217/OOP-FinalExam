@@ -25,7 +25,7 @@ namespace FinalExam
             DateOfBirth = _dateofbirth;
         }
 
-        public Player(string _firstname, string _lastname, Position _position, DateTime _dateofbirth) : this(_firstname, _lastname, 0, DateTime.Now)
+        public Player(string _firstname, string _lastname, Position _position, DateTime _dateofbirth) : this(_firstname, _lastname, _position, DateTime.Now)
         {
             FirstName = _firstname;
             LastName = _lastname;
