@@ -11,7 +11,7 @@
         <ListBox x:Name="listbox2" HorizontalAlignment="Right" Height="222" Margin="0,100,50,0" VerticalAlignment="Top" Width="200"/>
         <Label x:Name="allplayers" Content="All Players" HorizontalAlignment="Left" Margin="50,59,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.899,-1.087" Width="83" FontSize="14"/>
         <Label x:Name="formation" Content="Formation" HorizontalAlignment="Left" Margin="139,10,0,0" VerticalAlignment="Top" Height="26" FontSize="14"/>
-        <ComboBox HorizontalAlignment="Left" Margin="232,14,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" IsSynchronizedWithCurrentItem="True"/>
+        <ComboBox x:Name="dropdownmenu" HorizontalAlignment="Left" Margin="232,14,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged" IsSynchronizedWithCurrentItem="True"/>
         <Button x:Name="btnadd" Content="Add &gt;&gt;" HorizontalAlignment="Left" Margin="359,145,0,0" VerticalAlignment="Top" Width="85" RenderTransformOrigin="0.509,-1.201" FontSize="14" Click="Btnadd_Click"/>
         <Button Content="&lt;&lt; Remove" HorizontalAlignment="Left" Margin="359,256,0,0" VerticalAlignment="Top" Width="85" FontSize="14"/>
         <Label Content="Selected Players" HorizontalAlignment="Left" Margin="542,59,0,0" VerticalAlignment="Top" Width="122" FontSize="14"/>
